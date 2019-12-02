@@ -14,15 +14,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/target" />
+        app:srcCompat="@drawable/target"
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="120dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="100dp"
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="serif"
+        android:onClick="signInClick"
         android:text="@string/signin_btn"
         android:textAllCaps="true"
         android:textColor="@android:color/holo_orange_light"
@@ -35,9 +37,10 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_width="312dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
@@ -47,13 +50,22 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="312dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/pass"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="297dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
