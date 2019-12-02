@@ -3,6 +3,7 @@ package com.witthawat.target_food;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -90,9 +91,15 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, currentUser.getEmail());
 
             loginName.setText(currentUser.getEmail());
+            openListActivity();
         }
         else{
-            loginName.setText("wasd");
+            loginName.setText("Failed to login");
         }
+    }
+
+    public void openListActivity(){
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
     }
 }
