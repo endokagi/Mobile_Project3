@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "704396540917",
+    "firebase_url": "https://food-delivery-app-c4284.firebaseio.com",
+    "project_id": "food-delivery-app-c4284",
+    "storage_bucket": "food-delivery-app-c4284.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704396540917:android:481a79e210e319390c7ebc",
+        "android_client_info": {
+          "package_name": "com.witthawat.target_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704396540917-bdt9p987qhjepv3b8vms9dq0jff78j10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACeG8v7VX9BsU__ulV5UC5t2lZ-x01iiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704396540917-bdt9p987qhjepv3b8vms9dq0jff78j10.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
