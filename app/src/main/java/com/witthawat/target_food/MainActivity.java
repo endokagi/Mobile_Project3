@@ -91,15 +91,14 @@ public class MainActivity extends AppCompatActivity {
             Log.d(TAG, currentUser.getEmail());
 
             loginName.setText(currentUser.getEmail());
-            openListActivity();
         }
         else{
-            loginName.setText("Failed to login");
+            loginName.setText("wasd");
         }
     }
 
-    public void openListActivity(){
-        Intent intent = new Intent(this, ListActivity.class);
+    private void startActivity() {
+        Intent intent = new Intent(this,ListActivity.class);
         startActivity(intent);
     }
 }

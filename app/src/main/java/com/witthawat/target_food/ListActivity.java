@@ -53,10 +53,10 @@ public class ListActivity extends AppCompatActivity {
         Log.w(TAG, "sign out");
         mAuth.signOut();
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        openMainActivity();
+        startActivity();
     }
 
-    public void openMainActivity(){
+    public void startActivity(){
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
